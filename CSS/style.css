@@ -1,13 +1,27 @@
+
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Raleway-Bold';
+    src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
     src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-style: normal;
 }
 
-body {
-    font-family: Raleway;
+.fontRalewayBold {
+    font-family: Raleway-Bold;
 }
 
-h2 {
+.fontRalewayRegular {
+    font-family: Raleway-Regular;
+}
+
+
+
+h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
