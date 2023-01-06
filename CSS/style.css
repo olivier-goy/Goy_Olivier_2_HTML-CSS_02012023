@@ -16,9 +16,16 @@
     font-family: raleway-regular;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .row {
-    height: 100%;
+    padding: 0;
+    margin: 0;
     margin: 0 50px 0 50px;
+    height: 100%;
 }
 .rowHeaderMain {
     min-height: 100%;
@@ -32,15 +39,16 @@
 }
 .rowFooter {
     position: absolute;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+    margin: 0 50px 0 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #F2F2F2;
 }
 
 .footer {
     display: flex;
-    padding: 3%;
+    padding: 30px 0 50px 70px;
 
 }
 .footerItem {
@@ -61,4 +69,11 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    color: #000000;
 }
