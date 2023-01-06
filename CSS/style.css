@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'raleway-bold';
     src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
-    font-style: normal;
+    font-style: normal; 
 }
-
 @font-face {
     font-family: 'raleway-regular';
     src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
@@ -13,14 +12,13 @@
 .fontRalewayBold {
     font-family: raleway-bold;
 }
-
 .fontRalewayRegular {
     font-family: raleway-regular;
 }
 
 .row {
     height: 100%;
-    padding: 0 50px 0 50px;
+    margin: 0 50px 0 50px;
 }
 .rowHeaderMain {
     min-height: 100%;
@@ -34,11 +32,12 @@
 }
 .rowFooter {
     position: absolute;
-    bottom: -10.68%;
+    bottom: 0%;
     left: 0%;
     right: 0%;
     background-color: #F2F2F2;
 }
+
 .footer {
     display: flex;
     padding: 3%;
@@ -47,10 +46,6 @@
 .footerItem {
     flex: 1 1 0;
 }
-
-
-
-
 
 h1 {
     font-weight: 700;
