@@ -22,8 +22,6 @@ body {
 }
 
 .row {
-    padding: 0;
-    margin: 0;
     margin: 0 50px 0 50px;
     height: 100%;
 }
@@ -37,9 +35,27 @@ body {
 .rowMain {
 
 }
+
+.activity {
+    display: flex;
+    margin-bottom: 61px;
+}
+.cardActivity {
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 445px;
+    box-shadow: 5px 5px 5px #000000;
+}
+.cardActivity img {
+    object-fit: cover;
+    width: 300px;
+    height: 445px;
+
+}
+
 .rowFooter {
-    position: absolute;
-    margin: 0 50px 0 50px;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
