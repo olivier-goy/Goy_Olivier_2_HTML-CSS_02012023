@@ -1,92 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="CSS/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="https://kit.fontawesome.com/49449c0e92.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="https://kit.fontawesome.com/49449c0e92.js" crossorigin="anonymous"></script>
 
 
-        <title>Booki</title>
-    </head>
-    <body>
-        <div class="row">
-            <div class="rowHeaderMain">
-                <div class="rowHeader">
-                    <header>
-                        <div class="header">
-                            <div>        
-                                <img src="/images/logo/Booki.png" alt="images">
-                            </div>
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#">Hébergements</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Activitées</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>              
-                    </header>
+    <title>Booki</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div>
+                    <img src="./images/logo/Booki.png" alt="images">
                 </div>
-    
-                <div class="rowMain">
-                    <main>
-                        <h1 class="fontRalewayBold">Trouvez votre hébergement pour des vacandes de rêve</h1>
-                        <p class="fontRalewayRegular">En plein centre-ville ou en pleine nature</p>
-                        <section>
-                            <h1 class="fontRalewayBold">Activités à Marseille</h1>
-                            <div class="activity">
-                                <div class="cardActivity">
-                                    <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image">
-                                </div>
-                                <div class="cardActivity">
-                                    <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="images">
-                                </div>
-                                <div class="cardActivity">
-                                    <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="images">
-                                </div>
-                                <div class="cardActivity">
-                                    <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="images">
-                                </div>
-                            </div>
-                        </section>
-                    </main>
-                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Hébergements</a>
+                        </li>
+                        <li>
+                            <a href="#">Activitées</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
-            <div class="rowFooter">
-                <footer>
-                    <div class="footer">
-                        <div class="footerItem">
-                            <h2 class="fontRalewayBold">À propros</h2>
-                            <a href="#" class="fontRalewayRegular">Fonctionnement du site</a>
-                            <br>
-                            <a href="#" class="fontRalewayRegular">Conditionnement générales</a>
-                            <br>
-                            <a href="#" class="fontRalewayRegular">Données et confidentialité</a>
-                        </div>
-                        <div class="footerItem">
-                            <h2 class="fontRalewayBold">Nos Hébergements</h2>
-                            <a href="#" class="fontRalewayRegular">Charte de qualité</a>
-                            <br>
-                            <a href="#" class="fontRalewayRegular">Proposer votre hôtel</a>
-                        </div>
-                        <div class="footerItem">
-                            <h2 class="fontRalewayBold">Assistance</h2>
-                            <a href="#" class="fontRalewayRegular">Centre d'aide</a>
-                            <br>
-                            <a href="#" class="fontRalewayRegular">Nous contacter</a>
-                        </div>
+        <main>
+            <h1 class="fontRalewayBold">Trouvez votre hébergement pour des vacandes de rêve</h1>
+            <p class="fontRalewayRegular">En plein centre-ville ou en pleine nature</p>
+            <div class="hebergement">
+                <section class="hebergementMarseille">
+                    <h2>Hébergements à Marseille</h2>
+                </section>
+                <section class="hebergementPopulaire">
+                    <h2>Les plus populaires</h2>
+                </section>
+
+            </div>
+            <section>
+                <h2 class="fontRalewayBold">Activités à Marseille</h2>
+                <div class="activity">
+                    <div class="cardActivity">
+                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image">
                     </div>
-                </footer>
-           </div>
+                    <div class="cardActivity">
+                        <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="images">
+                    </div>
+                    <div class="cardActivity">
+                        <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="images">
+                    </div>
+                    <div class="cardActivity">
+                        <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="images">
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        </div>
-    </body>
+        <footer class="footer">
+            <div class="footerItem">
+                <h2 class="fontRalewayBold">À propros</h2>
+                <a href="#" class="fontRalewayRegular">Fonctionnement du site</a>
+                <br>
+                <a href="#" class="fontRalewayRegular">Conditionnement générales</a>
+                <br>
+                <a href="#" class="fontRalewayRegular">Données et confidentialité</a>
+            </div>
+            <div class="footerItem">
+                <h2 class="fontRalewayBold">Nos Hébergements</h2>
+                <a href="#" class="fontRalewayRegular">Charte de qualité</a>
+                <br>
+                <a href="#" class="fontRalewayRegular">Proposer votre hôtel</a>
+            </div>
+            <div class="footerItem">
+                <h2 class="fontRalewayBold">Assistance</h2>
+                <a href="#" class="fontRalewayRegular">Centre d'aide</a>
+                <br>
+                <a href="#" class="fontRalewayRegular">Nous contacter</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>
