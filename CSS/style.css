@@ -1,17 +1,19 @@
 @font-face {
     font-family: 'raleway-bold';
-    src: url('./fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
-    font-style: normal; 
+    src: url('/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    font-style: normal;
 }
+
 @font-face {
     font-family: 'raleway-regular';
-    src: url('./fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    src: url('/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
     font-style: normal;
 }
 
 .fontRalewayBold {
     font-family: raleway-bold;
 }
+
 .fontRalewayRegular {
     font-family: raleway-regular;
 }
@@ -19,24 +21,27 @@
 body {
     padding: 0;
     margin: 0;
+    margin: 0 50px 0 50px;
 }
 
 .container {
     max-width: 1400px;
-    margin: auto;    
+    margin: auto;
 }
 
 .hebergement {
     display: flex;
     gap: 40px;
 }
+
 .hebergementMarseille {
     flex: 2;
     border: solid 5px red;
 }
+
 .hebergementPopulaire {
     flex: 1;
-        border: solid 5px red;
+    border: solid 5px red;
 }
 
 
@@ -45,14 +50,15 @@ body {
     gap: 43px;
     margin-bottom: 61px;
 }
+
 .cardActivity {
     overflow: hidden;
     border-radius: 20px;
     flex: 1;
-    /* max-width: 300px; */
     max-height: 445px;
-    box-shadow: 5px 5px 5px #000000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 .cardActivity img {
     object-fit: cover;
     width: 100%;
@@ -67,6 +73,7 @@ body {
     background-color: #F2F2F2;
 
 }
+
 .footerItem {
     flex: 1 1 0;
 }
@@ -76,16 +83,19 @@ h1 {
     font-size: 22px;
     line-height: 26px;
 }
+
 h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
+
 p {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
+
 a {
     text-decoration: none;
     font-weight: 400;
