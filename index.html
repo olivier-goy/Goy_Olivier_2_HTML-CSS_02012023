@@ -37,6 +37,27 @@
         <main>
             <h1 class="fontRalewayBold">Trouvez votre hébergement pour des vacandes de rêve</h1>
             <p class="fontRalewayRegular">En plein centre-ville ou en pleine nature</p>
+            <form method="get" class="searchLodging">
+                <div class="SearchLodging">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="lodging" id="lodging" placeholder="Marseille, France" required>
+                        <input type="submit" value="Rechercher">
+                </div>
+
+                <div class="buttonFilter">
+                    <h2 class="fontRalewayBold">
+                        Filtres
+                        <button class="fontRalewayBold" type="button"><i class="fa-sharp fa-lg fa-solid fa-money-bill-wave iconColorBlue"></i> Économique</button>
+                        <button class="fontRalewayBold" type="button"><i class="fa-solid fa-lg fa-person iconColorBlue"></i> Familial</button>
+                        <button class="fontRalewayBold" type="button"><i class="fa-solid fa-lg fa-heart iconColorBlue"></i> Romantique</button>
+                        <button class="fontRalewayBold" type="button"><i class="fa-solid fa-lg fa-dog iconColorBlue"></i> Animaux autorisés</button>
+                    </h2>
+                </div>
+
+                <div class="lodgingNumber">
+                    <p class="fontRalewayRegular">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </form>
             <div class="lodging">
                 <section class="lodgingIn">
                     <h2 class="fontRalewayBold">Hébergements à Marseille</h2>
@@ -119,24 +140,25 @@
                 </section>
 
                 <section class="lodgingPopular">
-                    <h2 class="fontRalewayBold lodgingPopularForTitle">Les plus populaires<i class="fa-solid fa-chart-line iconColorBlue"></i></h2>
-                    
+                    <h2 class="fontRalewayBold lodgingPopularForTitle">Les plus populaires<i
+                            class="fa-solid fa-chart-line iconColorBlue"></i></h2>
+
                     <a href="#" class="lodgingPopularCard">
-                            <div class="lodgingPopularImage">
-                                <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                    alt="images">
+                        <div class="lodgingPopularImage">
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="images">
+                        </div>
+                        <div class="lodgingPopularMain">
+                            <h3 class="fontRalewayBold">Hôtel Le soleil du matin</h3>
+                            <p class="fontRalewayRegular">Nuit à partir de 128€</p>
+                            <div class="iconsStarPopular">
+                                <i class="fa-solid fa-star fa-xs iconColorBlue"></i><i
+                                    class="fa-solid fa-star fa-xs iconColorBlue"></i><i
+                                    class="fa-solid fa-star fa-xs iconColorBlue"></i><i
+                                    class="fa-solid fa-star fa-xs iconColorBlue"></i><i
+                                    class="fa-solid fa-star fa-xs iconColorGrey"></i>
                             </div>
-                            <div class="lodgingPopularMain">
-                                <h3 class="fontRalewayBold">Hôtel Le soleil du matin</h3>
-                                <p class="fontRalewayRegular">Nuit à partir de 128€</p>
-                                <div class="iconsStarPopular">
-                                    <i class="fa-solid fa-star fa-xs iconColorBlue"></i><i
-                                        class="fa-solid fa-star fa-xs iconColorBlue"></i><i
-                                        class="fa-solid fa-star fa-xs iconColorBlue"></i><i
-                                        class="fa-solid fa-star fa-xs iconColorBlue"></i><i
-                                        class="fa-solid fa-star fa-xs iconColorGrey"></i>
-                                </div>
-                            </div>
+                        </div>
                     </a>
                     <a href="#" class="lodgingPopularCard">
                         <div class="lodgingPopularImage">

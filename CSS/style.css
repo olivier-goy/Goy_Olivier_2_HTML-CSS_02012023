@@ -39,6 +39,22 @@ body {
     margin: auto;
 }
 
+/* form search lodging*/
+.searchNumber{
+
+}
+.buttonFilter {
+    margin: 40px 0 40px 0;
+}
+.buttonFilter h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.buttonFilter i {
+    margin-right: 10px;
+}
+
 /* div lodging*/
 .lodging {
     display: flex;
@@ -238,4 +254,17 @@ a {
     font-size: 16px;
     line-height: 31px;
     color: #000000;
+}
+button {
+    background-color: #FFFFFF;
+    border: solid 2px #D9D9D9;
+    padding: 15px;
+    border-radius: 25px;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+button:hover {
+    background-color: #DEEBFF;
 }
