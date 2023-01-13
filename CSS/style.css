@@ -40,19 +40,74 @@ body {
 }
 
 /* form search lodging*/
-.searchNumber{
-
+.styleSearchLodging {
+    margin-top: 20px;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
+    width: 420px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.iconSearchLodging {
+    flex: 1;
+    max-width: 50px;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputSearchLodging {
+    flex: 1;
+}
+
+.buttonSearchLodging button {
+    flex: 1;
+    max-width: 130px;
+    height: 100%;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 .buttonFilter {
     margin: 40px 0 40px 0;
 }
+
 .buttonFilter h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
+
 .buttonFilter i {
     margin-right: 10px;
+}
+
+.lodgingNumber {
+    display: flex;
+    align-items: center;
+}
+
+.lodgingNumber i {
+    border: solid 1px #D9D9D9;
+    width: 24px;
+    height: 24px;
+    border-radius: 30px;
+    margin-right: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* div lodging*/
@@ -131,6 +186,7 @@ body {
 .lodgingPopularForTitle {
     margin: 0 0 26px 0;
 }
+
 .lodgingPopularForTitle i {
     margin-left: 145px;
 }
@@ -255,6 +311,34 @@ a {
     line-height: 31px;
     color: #000000;
 }
+
+input {
+    border: none;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+input[type=submit] {
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+
+/* input[type=submit]:hover {
+    background-color: #DEEBFF;
+
+} */
+
+input::placeholder {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 17px;
+}
+
+
 button {
     background-color: #FFFFFF;
     border: solid 2px #D9D9D9;
@@ -265,6 +349,7 @@ button {
     font-size: 17px;
     line-height: 20px;
 }
+
 button:hover {
     background-color: #DEEBFF;
 }
