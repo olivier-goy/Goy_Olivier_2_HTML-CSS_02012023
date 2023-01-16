@@ -39,13 +39,49 @@ body {
     margin: auto;
 }
 
+/* div in header */
+.header {
+    display: flex;
+    margin-bottom: 63px;
+}
+
+.logoNav {
+    flex: 2;
+    margin-top: 44px;
+}
+
+.logoNav img {
+    width: 61px;
+}
+
+.header nav {
+    flex: 1;
+}
+
+.header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+
+}
+
+.header li {
+    flex: 1; 
+}
+
+.styleNav:hover + a {
+    color: #0065FC;
+        border-top: solid 2px #0065FC;
+}
+
+
 /* form search lodging*/
 .styleSearchLodging {
     margin-top: 20px;
     border: solid 1px #F2F2F2;
     border-radius: 15px;
     width: 420px;
-    height: 48px;
+    height: 49px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +89,8 @@ body {
 
 .iconSearchLodging {
     flex: 1;
-    max-width: 50px;
     height: 100%;
+    width: 100%;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     display: flex;
@@ -70,9 +106,9 @@ body {
     flex: 1;
     max-width: 130px;
     height: 100%;
+    border: none;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
-    border: none;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 18px;

@@ -18,16 +18,16 @@
     <div class="container">
         <header>
             <div class="header">
-                <div>
+                <div class="logoNav">
                     <img src="./images/logo/Booki.png" alt="images">
                 </div>
                 <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Hébergements</a>
+                    <ul class="styleNav">
+                        <li class="fontRalewayRegular">
+                            <a href="#lodging">Hébergements</a>
                         </li>
-                        <li>
-                            <a href="#">Activitées</a>
+                        <li class="fontRalewayRegular styleNav">
+                            <a href="#activity">Activitées</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,10 +40,10 @@
             <form method="get" class="searchLodging">
                 <div class="searchLodging styleSearchLodging">
                     <div class="iconSearchLodging">
-                        <i class="fa-solid fa-xl fa-location-dot"></i>
+                        <i class="fa-solid fa-lg fa-location-dot"></i>
                     </div>
                     <div class="inputSearchLodging">
-                        <input class="fontRalewayBold" type="text" name="lodging" id="lodging" placeholder="Marseille, France" required>
+                        <input class="fontRalewayBold" type="text" name="lodging" placeholder="Marseille, France" required>
                     </div>
                     <div class="buttonSearchLodging">
                         <button class="fontRalewayBold" type="submit">Rechercher</button>
@@ -66,7 +66,7 @@
                 </div>
             </form>
             <div class="lodging">
-                <section class="lodgingIn">
+                <section class="lodgingIn" id="lodging">
                     <h2 class="fontRalewayBold">Hébergements à Marseille</h2>
                     <div class="lodgingCard">
                         <a href="#" class="cardInLodgingCard">
@@ -202,7 +202,7 @@
                     </a>
                 </section>
             </div>
-            <section>
+            <section id="activity">
                 <h2 class="fontRalewayBold">Activités à Marseille</h2>
                 <div class="activity">
                     <a href="#" class="cardActivity">
