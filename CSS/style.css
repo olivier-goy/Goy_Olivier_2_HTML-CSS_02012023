@@ -222,7 +222,7 @@ body {
 }
 
 .cardInLodgingCard h3 {
-    margin-left: 11px;
+    padding: 4px 0 0 11px;
 }
 
 .cardInLodgingCard P {
@@ -253,26 +253,26 @@ body {
 }
 
 .lodgingPopularCard {
+    overflow: hidden;
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    height: 144px;
+    border: solid 5px #FFFFFF;
     border-radius: 20px;
+    height: 134px;
 }
 
 .lodgingPopularImage {
-    flex: 1;
+    flex: 1.3;
 }
 
 .lodgingPopularImage img {
     object-fit: cover;
-    border: solid 5px #FFFFFF;
     height: 134px;
-    width: 127px;
-    border-radius: 20px 0 0 20px;
+    width: 100%;
 }
 
 .lodgingPopularMain {
-    padding: 16px 22px 0 15px;
+    padding: 16px 15px 0 15px;
     flex: 2;
     position: relative;
 }
@@ -438,9 +438,9 @@ button:hover {
         margin-left: 26px;
     }
 
-    
+}
 
-
+@media (max-width: 991px) {
 
 }
 
