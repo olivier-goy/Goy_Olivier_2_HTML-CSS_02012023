@@ -14,17 +14,17 @@
     <title>Booki</title>
 </head>
 
-<body>
-    <div class="container">
+<body class="marginAuto paddingInit">
+    <div class="container marginAuto">
         <header class="header displayFlex">
             <img class="logoNav" src="./images/logo/Booki.png" alt="images">
             <nav class="h100">
-                <ul class="h100 displayFlex">
-                    <li class="fontRalewayRegular h100 ">
-                        <a class="h100 w100 displayFlex font2 justifyCenter" href="#">Hébergements</a>
+                <ul class="marginInit displayFlex h100">
+                    <li class="fontRalewayRegular">
+                        <a class="displayFlex justifyCenter h100 w100 changeTextDecoration font2" href="#sectionLodgings">Hébergements</a>
                     </li>
-                    <li class="fontRalewayRegular h100">
-                        <a class="h100 w100 displayFlex justifyCenter" href="#">Activitées</a>
+                    <li class="fontRalewayRegular">
+                        <a class="displayFlex justifyCenter h100 w100 changeTextDecoration font2" href="#sectionActivities">Activitées</a>
                     </li>
                 </ul>
             </nav>
@@ -32,7 +32,7 @@
 
         <main>
             <div class="centerMobile">
-                <h1 class="fontRalewayBold font6">Trouvez votre hébergement pour des vacandes de rêve</h1>
+                <h1 class="fontRalewayBold marginInit font6">Trouvez votre hébergement pour des vacandes de rêve</h1>
                 <p class="fontRalewayRegular font1 firstP">En plein centre-ville ou en pleine nature</p>
                 <form method="get" class="searchLodging">
                     <div class="styleSearchLodging displayFlex justifyCenter">
@@ -40,7 +40,7 @@
                             <i class="fa-solid fa-lg fa-location-dot"></i>
                         </div>
                         <div class="inputSearchLodging h100">
-                            <input class="fontRalewayBold h100 w100" type="text" name="lodging" placeholder="Marseille, France"
+                            <input class="fontRalewayBold paddingInit h100 w100" type="text" name="lodging" placeholder="Marseille, France"
                                 required>
                         </div>
                         <div class="buttonSearchLodging h100">
@@ -48,7 +48,7 @@
                         </div>
                     </div>   
                     <div class="buttonFilters displayFlex">
-                        <h2 class="fontRalewayBold font5">Filtres</h2>
+                        <h2 class="fontRalewayBold marginInit font5">Filtres</h2>
                         <div class="displayFlex rowWrap responsiveMobileFilters">
                             <button class="fontRalewayBold buttonFilter font4" type="button">
                                 <i class="fa-sharp fa-lg fa-solid fa-money-bill-wave colorBlue"></i>
@@ -80,14 +80,14 @@
                     </div>
                 </div>
             </div>
-            <div class="lodging displayFlex" id="lodging">
+            <div class="lodgings displayFlex" id="sectionLodgings">
                 <section class="lodgingIn">
-                    <h2 class="fontRalewayBold font6">Hébergements à Marseille</h2>
-                    <div class="lodgingCard">
-                        <a href="#" class="cardInLodgingCard">
+                    <h2 class="fontRalewayBold marginInit font6">Hébergements à Marseille</h2>
+                    <div class="lodgingInCards">
+                        <a href="#" class="lodgingInCard changeTextDecoration">
                             <article>
                                 <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="w100" alt="images">
-                                <h3 class="fontRalewayBold font3">Auberge La Canebière</h3>
+                                <h3 class="fontRalewayBold marginInit font3">Auberge La Canebière</h3>
                                 <p class="fontRalewayRegular font">Nuit à partir de 25€</p>
                                 <div class="iconsStarLodging">
                                     <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -98,10 +98,10 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="cardInLodgingCard">
+                        <a href="#" class="lodgingInCard changeTextDecoration">
                             <article>
                                 <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="w100" alt="images">
-                                <h3 class="fontRalewayBold font3">Hôtel du port</h3>
+                                <h3 class="fontRalewayBold marginInit font3">Hôtel du port</h3>
                                 <p class="fontRalewayRegular font">Nuit à partir de 52€</p>
                                 <div class="iconsStarLodging">
                                     <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -112,10 +112,10 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="cardInLodgingCard">
+                        <a href="#" class="lodgingInCard changeTextDecoration">
                             <article>
                                 <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="w100" alt="images">
-                                <h3 class="fontRalewayBold font3">Hôtel Les mouettes</h3>
+                                <h3 class="fontRalewayBold marginInit font3">Hôtel Les mouettes</h3>
                                 <p class="fontRalewayRegular font">Nuit à partir de 76€</p>
                                 <div class="iconsStarLodging">
                                     <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -126,10 +126,10 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="cardInLodgingCard">
+                        <a href="#" class="lodgingInCard changeTextDecoration">
                             <article>
                                 <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="w100" alt="images">
-                                <h3 class="fontRalewayBold font3">Hôtel de la mer</h3>
+                                <h3 class="fontRalewayBold marginInit font3">Hôtel de la mer</h3>
                                 <p class="fontRalewayRegular font">Nuit à partir de 46€</p>
                                 <div class="iconsStarLodging">
                                     <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -140,10 +140,10 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="cardInLodgingCard">
+                        <a href="#" class="lodgingInCard changeTextDecoration">
                             <article>
                                 <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="w100" alt="images">
-                                <h3 class="fontRalewayBold font3">Auberge Le Panier</h3>
+                                <h3 class="fontRalewayBold marginInit font3">Auberge Le Panier</h3>
                                 <p class="fontRalewayRegular font">Nuit à partir de 23€</p>
                                 <div class="iconsStarLodging">
                                     <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -154,10 +154,10 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#" class="cardInLodgingCard">
+                        <a href="#" class="lodgingInCard changeTextDecoration">
                             <article>
                                 <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="w100" alt="images">
-                                <h3 class="fontRalewayBold font3">Hôtel Chez Amina</h3>
+                                <h3 class="fontRalewayBold marginInit font3">Hôtel Chez Amina</h3>
                                 <p class="fontRalewayRegular font">Nuit à partir de 96€</p>
                                 <div class="iconsStarLodging">
                                     <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -169,22 +169,22 @@
                             </article>
                         </a>
                     </div>
-                    <a href="#" class="fontRalewayBold h100 font5">Afficher plus</a>
+                    <a href="#" class="fontRalewayBold h100 changeTextDecoration font5">Afficher plus</a>
                 </section>
 
                 <section class="lodgingPopular">
-                    <h2 class="fontRalewayBold lodgingPopularForTitle displayFlex">
+                    <h2 class="fontRalewayBold lodgingPopularForTitle marginInit displayFlex">
                         <span class="font6">Les plus populaires</span>
                         <i class="fa-solid fa-xs fa-chart-line colorBlue"></i>
                     </h2>
                     <div class="lodgingPopularCards displayFlex">
-                        <a href="#">
+                        <a href="#" class="changeTextDecoration">
                             <article class="lodgingPopularCard displayFlex">
                                 <div class="lodgingPopularImage">
                                     <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="w100" alt="images">
                                 </div>
                                 <div class="lodgingPopularMain">
-                                    <h3 class="fontRalewayBold font3">Hôtel Le soleil du matin</h3>
+                                    <h3 class="fontRalewayBold marginInit font3">Hôtel Le soleil du matin</h3>
                                     <p class="fontRalewayRegular font">Nuit à partir de 128€</p>
                                     <div class="iconsStarPopular">
                                         <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -196,13 +196,13 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="changeTextDecoration">
                             <article class="lodgingPopularCard displayFlex">
                                 <div class="lodgingPopularImage">
                                     <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="w100" alt="images">
                                 </div>
                                 <div class="lodgingPopularMain">
-                                    <h3 class="fontRalewayBold font3">Chambres d'hôtes Au coeur de l'eau</h3>
+                                    <h3 class="fontRalewayBold marginInit font3">Chambres d'hôtes Au coeur de l'eau</h3>
                                     <p class="fontRalewayRegular font">Nuit à partir de 71€</p>
                                     <div class="iconsStarPopular">
                                         <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -214,13 +214,13 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="#" class="changeTextDecoration">
                             <article class="lodgingPopularCard displayFlex">
                                 <div class="lodgingPopularImage">
                                     <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="w100" alt="images">
                                 </div>
                                 <div class="lodgingPopularMain">
-                                    <h3 class="fontRalewayBold font3">Hôtel Bleu et Blanc</h3>
+                                    <h3 class="fontRalewayBold marginInit font3">Hôtel Bleu et Blanc</h3>
                                     <p class="fontRalewayRegular font">Nuit à partir de 68€</p>
                                     <div class="iconsStarPopular">
                                         <i class="fa-solid fa-star fa-xs colorBlue"></i><i
@@ -236,21 +236,21 @@
                 </section>
             </div>
             <section id="sectionActivities">
-                <h2 class="fontRalewayBold font6">Activités à Marseille</h2>
+                <h2 class="fontRalewayBold marginInit font6">Activités à Marseille</h2>
                 <div class="activities displayFlex">
-                    <a href="#" class="cardActivity">
+                    <a href="#" class="cardActivity changeTextDecoration">
                         <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="w100" alt="image">
                         <p class="fontRalewayBold font3">Vieux-Port</p>
                     </a>
-                    <a href="#" class="cardActivity">
+                    <a href="#" class="cardActivity changeTextDecoration">
                         <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="w100" alt="images">
                         <p class="fontRalewayBold font3">Fort de Pomègues</p>
                     </a>
-                    <a href="#" class="cardActivity">
+                    <a href="#" class="cardActivity changeTextDecoration">
                         <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="w100" alt="images">
                         <p class="fontRalewayBold font3 activityTopMargin">Parc national des Calanques</p>
                     </a>
-                    <a href="#" class="cardActivity">
+                    <a href="#" class="cardActivity changeTextDecoration">
                         <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="w100" alt="images">
                         <p class="fontRalewayBold font3 activityText activityTopMargin">Notre-Dame-de-la-Garde</p>
                     </a>
@@ -260,24 +260,24 @@
 
         <footer class="footer displayFlex">
             <div class="footerItem">
-                <h2 class="fontRalewayBold font5">À propros</h2>
-                <a href="#" class="fontRalewayRegular font1">Fonctionnement du site</a>
+                <h2 class="fontRalewayBold marginInit font5">À propros</h2>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Fonctionnement du site</a>
                 <br>
-                <a href="#" class="fontRalewayRegular font1">Conditions générales</a>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Conditions générales</a>
                 <br>
-                <a href="#" class="fontRalewayRegular font1">Données et confidentialité</a>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Données et confidentialité</a>
             </div>
             <div class="footerItem">
-                <h2 class="fontRalewayBold font5">Nos Hébergements</h2>
-                <a href="#" class="fontRalewayRegular font1">Charte de qualité</a>
+                <h2 class="fontRalewayBold marginInit font5">Nos Hébergements</h2>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Charte de qualité</a>
                 <br>
-                <a href="#" class="fontRalewayRegular font1">Proposer votre hôtel</a>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Proposer votre hôtel</a>
             </div>
             <div class="footerItem">
-                <h2 class="fontRalewayBold font5">Assistance</h2>
-                <a href="#" class="fontRalewayRegular font1">Centre d'aide</a>
+                <h2 class="fontRalewayBold marginInit font5">Assistance</h2>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Centre d'aide</a>
                 <br>
-                <a href="#" class="fontRalewayRegular font1">Nous contacter</a>
+                <a href="#" class="fontRalewayRegular changeTextDecoration font1">Nous contacter</a>
             </div>
         </footer>
     </div>

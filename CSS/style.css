@@ -53,15 +53,28 @@
     line-height: 26px;
 }
 
-/* Class for color in the page */
+/* Class for color and decoration in the page */
 .colorBlue {
     color: #0065FC;
 }
 .colorGrey {
     color: #F2F2F2;
 }
+.changeTextDecoration {
+    text-decoration: none;
+    color: #000000;
+}
 
 /* General class for the page */
+.marginAuto {
+    margin: auto;
+}
+.paddingInit {
+    padding: 0;
+}
+.marginInit {
+    margin: 0;
+}
 .displayFlex {
     display: flex;
 }
@@ -81,13 +94,10 @@
 
 /* class body and container */
 body {
-    margin: auto;
     max-width: 1400px;
-    padding: 0;
 }
 .container {
     max-width: 1340px;
-    margin: auto;
 }
 
 /* div in header */
@@ -101,7 +111,6 @@ body {
 }
 .header ul {
     list-style-type: none;
-    margin: 0;
 }
 .header li {
     width: 162px;
@@ -133,6 +142,19 @@ body {
 }
 .inputSearchLodging {
     flex: 5;
+}
+.inputSearchLodging input {
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.inputSearchLodging input::placeholder {
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 17px;
 }
 .buttonSearchLodging {
     flex: 1;
@@ -187,7 +209,7 @@ body {
 }
 
 /* div general lodging*/
-.lodging {
+.lodgings {
     gap: 40px;
     margin: 39px 0 60px 0;
 }
@@ -202,13 +224,13 @@ body {
 .lodgingIn h2 {
     margin: 0 0 23px 0;
 }
-.lodgingCard {
+.lodgingInCards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(29%, 3fr));
     gap: 30px;
     margin-bottom: 40px;
 }
-.cardInLodgingCard {
+.lodgingInCard {
     overflow: hidden;
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -216,14 +238,14 @@ body {
     height: 189px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.cardInLodgingCard img {
+.lodgingInCard img {
     object-fit: cover;
     height: 114px;
 }
-.cardInLodgingCard h3 {
+.lodgingInCard h3 {
     padding: 4px 0 0 11px;
 }
-.cardInLodgingCard P {
+.lodgingInCard P {
     margin: 5px 0 5px 11px;
 }
 .iconsStarLodging {
@@ -262,7 +284,7 @@ body {
     height: 134px;
 }
 .lodgingPopularMain {
-    padding: 16px 5px 0 15px;
+    padding: 11px 5px 0 15px;
     flex: 2;
     position: relative;
 }
@@ -310,39 +332,6 @@ body {
     line-height: 29px;
 }
 
-/* Tag generals in the page */
-h1 {
-    margin: 0;
-}
-h2 {
-    margin: 0;
-}
-h3 {
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #000000;
-}
-input {
-    border: none;
-    padding: 0;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-}
-input[type=submit] {
-    background-color: #0065FC;
-    color: #FFFFFF;
-}
-input::placeholder {
-    color: #000000;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    padding-left: 17px;
-}
-
 /* media queries for tablette */
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
@@ -350,7 +339,7 @@ input::placeholder {
         margin: auto;
     }
 
-    .lodging {
+    .lodgings {
         flex-direction: column;
         background-color: #FFFFFF;
     }
@@ -478,7 +467,7 @@ input::placeholder {
         flex: 89%;
     }
 
-    .lodging {
+    .lodgings {
         gap: 6px;
         margin-top: 17px;
         flex-direction: column-reverse;
@@ -487,7 +476,7 @@ input::placeholder {
         background-color: #FFFFFF;
         padding: 20px;
     }
-    .lodgingCard {
+    .lodgingInCards {
         gap: 12px;
         display: flex;
         flex-direction: column;
