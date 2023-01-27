@@ -4,94 +4,87 @@
     src: url('../fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
     font-style: normal;
 }
-
 @font-face {
     font-family: 'raleway-regular';
     src: url('../fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
     font-style: normal;
 }
-
 .fontRalewayBold {
     font-family: raleway-bold;
 }
-
 .fontRalewayRegular {
     font-family: raleway-regular;
 }
 
 /* class font */
-
 .font {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 }
-
 .font1 {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
-
 .font2 {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 }
-
 .font3 {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
-
 .font4 {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
 }
-
 .font5 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
-
 .font6 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
 }
 
-/* Class for color icons in the page */
-.iconColorBlue {
+/* Class for color in the page */
+.colorBlue {
     color: #0065FC;
 }
-
-.iconColorGrey {
+.colorGrey {
     color: #F2F2F2;
 }
 
+/* General class for the page */
 .displayFlex {
     display: flex;
 }
-
+.rowWrap {
+    flex-wrap: wrap;
+}
 .justifyCenter {
     justify-content: center;
     align-items: center;
 }
-
 .h100 {
     height: 100%;
 }
-
-body {
-    padding: 0;
-    margin: auto;
-    max-width: 1400px;
-    /* margin: 0 30px 0 30px; */
+.w100 {
+    width: 100%;
 }
 
+/* class body and container */
+body {
+    margin: auto;
+    max-width: 1400px;
+    padding: 0;
+}
 .container {
     max-width: 1340px;
     margin: auto;
@@ -103,30 +96,26 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .logoNav {
     width: 61px;
 }
-
 .header ul {
-    gap: 67px;
     list-style-type: none;
     margin: 0;
-
 }
-
 .header li {
-    min-width: 120px;
+    width: 162px;
+    border-top: solid 2px #FFFFFF;
 }
-
 .header li:hover {
     border-top: solid 2px #0065FC;
 }
-
 .header a:hover {
     color: #0065FC;
 }
-
+.firstP {
+    margin-top: 8px;
+}
 
 /* form search lodging*/
 .styleSearchLodging {
@@ -136,52 +125,68 @@ body {
     width: 420px;
     height: 49px;
 }
-
 .iconSearchLodging {
     flex: 1;
-    height: 100%;
-    width: 100%;
     background-color: #F2F2F2;
+    border: solid 1px #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
-
 .inputSearchLodging {
-    flex: 1;
+    flex: 5;
 }
-
-.buttonSearchLodging button {
+.buttonSearchLodging {
     flex: 1;
-    max-width: 130px;
-    height: 100%;
-    border: none;
     background-color: #0065FC;
+    border: solid 1px #0065FC;
     border-radius: 0 15px 15px 0;
+}
+.buttonSearchLodging button {
+    border: none;
+    border-radius: 20px;
+    background-color: #0065FC;
     color: #FFFFFF;
+    padding: 15px;
+    margin-left: 0;
 }
 
-.buttonFilter {
+/* button filters */
+.buttonFilters {
     align-items: center;
-    margin: 40px 0 40px 0;
+    margin: 31px 0 38px 0;
 }
-
+.buttonFilter {
+    background-color: #FFFFFF;
+    border: solid 2px #D9D9D9;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin-left: 36px;
+}
+.buttonFilter:hover {
+    background-color: #DEEBFF;
+}
 .buttonFilter i {
     margin-right: 10px;
 }
 
-.lodgingNumber {
-    align-items: center;
+/* paragraph for numbers lodging */
+.lodgingNumberI {
+    flex: 3%;
 }
-
-.lodgingNumber i {
-    border: solid 1px #D9D9D9;
+.lodgingNumberP {
+    flex: 97%;
+}
+.lodgingNumberP p {
+    margin: 3px 0 0 0;
+}
+.lodgingNumberI i {
+    display: flex;
     width: 24px;
     height: 24px;
-    border-radius: 30px;
-    margin-right: 11px;
-    display: flex;
+    border-radius: 12px;
+    border: solid 1px #D9D9D9;
 }
 
-/* div lodging*/
+/* div general lodging*/
 .lodging {
     gap: 40px;
     margin: 39px 0 60px 0;
@@ -192,21 +197,17 @@ body {
     flex: 2.4;
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 41px;
+    padding: 40px;
 }
-
 .lodgingIn h2 {
     margin: 0 0 23px 0;
-
 }
-
 .lodgingCard {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(29%, 3fr));
-    gap: 31px;
-    margin-bottom: 30px;
+    gap: 30px;
+    margin-bottom: 40px;
 }
-
 .cardInLodgingCard {
     overflow: hidden;
     background-color: #FFFFFF;
@@ -215,21 +216,16 @@ body {
     height: 189px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-
 .cardInLodgingCard img {
     object-fit: cover;
-    width: 100%;
     height: 114px;
 }
-
 .cardInLodgingCard h3 {
     padding: 4px 0 0 11px;
 }
-
 .cardInLodgingCard P {
     margin: 5px 0 5px 11px;
 }
-
 .iconsStarLodging {
     margin-left: 11px;
 }
@@ -239,20 +235,17 @@ body {
     flex: 1;
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 39px;
-
+    padding: 38px;
 }
-
 .lodgingPopularForTitle {
     margin-bottom: 26px;
     justify-content: space-between;
+    align-items: center;
 }
-
 .lodgingPopularCards {
     flex-direction: column;
     gap: 33px;
 }
-
 .lodgingPopularCard {
     overflow: hidden;
     background-color: #FFFFFF;
@@ -261,89 +254,76 @@ body {
     border-radius: 20px;
     height: 134px;
 }
-
 .lodgingPopularImage {
-    flex: 1.3;
+    flex: 1.4;
 }
-
 .lodgingPopularImage img {
     object-fit: cover;
     height: 134px;
-    width: 100%;
 }
-
 .lodgingPopularMain {
-    padding: 16px 15px 0 15px;
+    padding: 16px 5px 0 15px;
     flex: 2;
     position: relative;
 }
-
 .lodgingPopularCard p {
     margin-top: 7px;
 }
-
 .iconsStarPopular {
     position: absolute;
     bottom: 3%;
 }
 
 /* Section activity */
-.activity {
+.activities {
     gap: 43px;
     margin: 19px 0 61px 0;
 }
-
 .cardActivity {
     overflow: hidden;
     border-radius: 20px;
     flex: 1;
     height: 445px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
 }
-
 .cardActivity img {
     object-fit: cover;
-    width: 100%;
     height: 389px;
 }
-
 .cardActivity p {
     margin-left: 19px;
 }
 
-/* Footer */
+/* class for footer */
 .footer {
     padding: 45px 50px;
     background-color: #F2F2F2;
+    gap: 40px;
 }
-
 .footerItem {
     flex: 1;
 }
-
 .footerItem h2 {
     margin-bottom: 20px;
 }
-
 .footerItem a {
     line-height: 29px;
 }
 
 /* Tag generals in the page */
+h1 {
+    margin: 0;
+}
 h2 {
     margin: 0;
 }
-
 h3 {
     margin: 0;
 }
-
 a {
     text-decoration: none;
     color: #000000;
 }
-
 input {
     border: none;
     padding: 0;
@@ -351,12 +331,10 @@ input {
     font-size: 18px;
     line-height: 21px;
 }
-
 input[type=submit] {
     background-color: #0065FC;
     color: #FFFFFF;
 }
-
 input::placeholder {
     color: #000000;
     font-weight: 700;
@@ -365,20 +343,8 @@ input::placeholder {
     padding-left: 17px;
 }
 
-
-button {
-    background-color: #FFFFFF;
-    border: solid 2px #D9D9D9;
-    padding: 15px;
-    border-radius: 25px;
-    margin-left: 40px;
-}
-
-button:hover {
-    background-color: #DEEBFF;
-}
-
-@media (min-width: 769px) and (max-width: 991px) {
+/* media queries for tablette */
+@media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 880px;
         margin: auto;
@@ -386,34 +352,30 @@ button:hover {
 
     .lodging {
         flex-direction: column;
+        background-color: #FFFFFF;
     }
-
     .lodgingPopularCards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(29%, 3fr));
         gap: 23px;
     }
-
     .lodgingPopularImage img {
         width: 101px;
     }
-
     .lodgingPopularMain {
         width: auto;
         padding: 12px 4px 0 10px;
     }
-
     .lodgingPopularMain h3 {
         font-size: 14px;
         line-height: 16px;
     }
-
     .lodgingPopularMain p {
         font-size: 13px;
         line-height: 15px;
     }
 
-    .activity {
+    .activities {
         gap: 50px;
     }
     .cardActivity {
@@ -441,12 +403,115 @@ button:hover {
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) {}
 
-}
+/* media queries for mobile */
+@media (max-width: 767px) {
 
-@media (max-width: 768px) {
-    body {
-        background-color: #000000;
+    .header {
+        flex-direction: column;
+        margin: 21px 0 31px 0;
+        height: 100px;
+    }
+    .header img {
+        margin-bottom: 25px;
+    }
+    .header ul {
+        border-bottom: solid 3px #F2F2F2;
+        padding: 0;
+        gap: 0;
+    }
+    .header li {
+        flex: 1;
+        width: 187px;
+    }
+    .header li:hover {
+        border-top: none;
+        border-bottom: solid 3px #0065FC;
+    }
+
+    .centerMobile {
+        padding: 0 20px;
+    }
+
+    .styleSearchLodging {
+        width: 100%;
+        margin-top: 36px;
+    }
+    .buttonSearchLodging>button {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+    .buttonSearchLodging>button::after {
+        font-family: "Font Awesome 6 Free";
+        content: "\f002";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+
+    .buttonFilters {
+        margin: 34px 0 24px 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .responsiveMobileFilters {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(47%, 2fr));
+        gap: 18px;
+        margin-top: 15px;
+    }
+    .responsiveMobileFilters button {
+        margin: 0;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .buttonFilter i {
+        margin-right: 2px;
+    }
+
+    .lodgingNumberI {
+        flex: 11%;
+    }
+    .lodgingNumberP {
+        flex: 89%;
+    }
+
+    .lodging {
+        gap: 6px;
+        margin-top: 17px;
+        flex-direction: column-reverse;
+    }
+    .lodgingIn {
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+    .lodgingCard {
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: unset;
+    }
+    .lodgingPopular {
+        padding: 28px 20px 47px 20px;
+        border-radius: 0;
+    }
+    .lodgingPopularCards {
+        gap: 12px;
+    }
+
+    #sectionActivities {
+        padding: 0 20px;
+    }
+    .activities {
+        flex-direction: column;
+    }
+    .cardActivity img {
+        height: 134px;
+    }
+
+    .footer {
+        flex-direction: column;
     }
 }
