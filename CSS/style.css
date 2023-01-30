@@ -179,7 +179,7 @@ body {
 .buttonFilter {
     background-color: #FFFFFF;
     border: solid 2px #D9D9D9;
-    padding: 15px 20px;
+    padding: 14px 20px;
     border-radius: 25px;
     margin-left: 36px;
 }
@@ -318,7 +318,7 @@ body {
 
 /* class for footer */
 .footer {
-    padding: 45px 50px;
+    padding: 45px 70px;
     background-color: #F2F2F2;
     gap: 40px;
 }
@@ -336,9 +336,22 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 880px;
-        margin: auto;
     }
-
+    .buttonFilters{
+        gap: 20px;
+    }
+    .responsiveFilters {
+        gap: 20px;
+    }
+    .buttonFilter {
+        margin-left: 0;
+    }
+    .lodgingNumberI {
+        flex: 4%;
+    }
+    .lodgingNumberP {
+        flex: 96%;
+    }
     .lodgings {
         flex-direction: column;
         background-color: #FFFFFF;
@@ -363,7 +376,6 @@ body {
         font-size: 13px;
         line-height: 15px;
     }
-
     .activities {
         gap: 50px;
     }
@@ -379,15 +391,9 @@ body {
     }
     .activityTopMargin {
         margin-top: 5px;
-
     }
-
     .footer {
         gap: 35px;
-    }
-
-    button {
-        margin-left: 26px;
     }
 
 }
@@ -444,17 +450,20 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
-    .responsiveMobileFilters {
+    .responsiveFilters {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(47%, 2fr));
         gap: 18px;
         margin-top: 15px;
     }
-    .responsiveMobileFilters button {
+    .responsiveFilters button {
         margin: 0;
         font-size: 11px;
         line-height: 13px;
+    }
+    .buttonFilter {
+        padding: 15px 0;
     }
     .buttonFilter i {
         margin-right: 2px;
