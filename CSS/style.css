@@ -145,11 +145,6 @@ body {
 }
 .inputSearchLodging input {
     border: none;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-}
-.inputSearchLodging input::placeholder {
     color: #000000;
     font-weight: 700;
     font-size: 18px;
@@ -179,7 +174,7 @@ body {
 .buttonFilter {
     background-color: #FFFFFF;
     border: solid 2px #D9D9D9;
-    padding: 14px 20px;
+    padding: 13px 18px;
     border-radius: 25px;
     margin-left: 36px;
 }
@@ -187,7 +182,7 @@ body {
     background-color: #DEEBFF;
 }
 .buttonFilter i {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 /* paragraph for numbers lodging */
@@ -338,7 +333,7 @@ body {
         max-width: 880px;
     }
     .buttonFilters{
-        gap: 20px;
+        gap: 15px;
     }
     .responsiveFilters {
         gap: 20px;
@@ -395,10 +390,7 @@ body {
     .footer {
         gap: 35px;
     }
-
 }
-
-@media (max-width: 991px) {}
 
 /* media queries for mobile */
 @media (max-width: 767px) {
@@ -470,10 +462,10 @@ body {
     }
 
     .lodgingNumberI {
-        flex: 11%;
+        flex: 5%;
     }
     .lodgingNumberP {
-        flex: 89%;
+        flex: 95%;
     }
 
     .lodgings {
@@ -511,5 +503,6 @@ body {
 
     .footer {
         flex-direction: column;
+        padding: 45px 30px;
     }
 }
