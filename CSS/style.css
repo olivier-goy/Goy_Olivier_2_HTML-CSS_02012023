@@ -414,11 +414,9 @@ body {
         border-top: none;
         border-bottom: solid 3px #0065FC;
     }
-
     .centerMobile {
         padding: 0 20px;
     }
-
     .styleSearchLodging {
         width: 100%;
         margin-top: 36px;
@@ -434,7 +432,6 @@ body {
         display: block;
         line-height: initial;
     }
-
     .buttonFilters {
         margin: 34px 0 24px 0;
         flex-direction: column;
@@ -458,14 +455,12 @@ body {
     .buttonFilter i {
         margin-right: 2px;
     }
-
     .lodgingNumberI {
         flex: 5%;
     }
     .lodgingNumberP {
         flex: 95%;
     }
-
     .lodgings {
         gap: 6px;
         margin-top: 17px;
@@ -488,7 +483,6 @@ body {
     .lodgingPopularCards {
         gap: 12px;
     }
-
     #sectionActivities {
         padding: 0 20px;
     }
@@ -498,7 +492,6 @@ body {
     .cardActivity img {
         height: 134px;
     }
-
     .footer {
         flex-direction: column;
         padding: 45px 30px;
