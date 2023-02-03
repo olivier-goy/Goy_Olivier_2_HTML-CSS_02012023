@@ -78,9 +78,6 @@
 .displayFlex {
     display: flex;
 }
-.rowWrap {
-    flex-wrap: wrap;
-}
 .justifyCenter {
     justify-content: center;
     align-items: center;
@@ -174,7 +171,7 @@ body {
 .buttonFilter {
     background-color: #FFFFFF;
     border: solid 2px #D9D9D9;
-    padding: 13px 18px;
+    padding: 13px 17px;
     border-radius: 25px;
     margin-left: 36px;
 }
@@ -333,10 +330,11 @@ body {
         max-width: 880px;
     }
     .buttonFilters{
-        gap: 15px;
+        width: 100%;
     }
     .responsiveFilters {
-        gap: 15px;
+        width: 100%;
+        justify-content: space-around;
     }
     .buttonFilter {
         margin-left: 0;
