@@ -182,7 +182,7 @@ body {
     background-color: #DEEBFF;
 }
 .buttonFilter i {
-    margin-right: 8px;
+    margin-right: 7px;
 }
 
 /* paragraph for numbers lodging */
@@ -336,7 +336,7 @@ body {
         gap: 15px;
     }
     .responsiveFilters {
-        gap: 20px;
+        gap: 15px;
     }
     .buttonFilter {
         margin-left: 0;
