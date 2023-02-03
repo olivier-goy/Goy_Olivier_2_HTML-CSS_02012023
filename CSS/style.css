@@ -392,7 +392,6 @@ body {
 
 /* media queries for mobile */
 @media (max-width: 767px) {
-
     .header {
         flex-direction: column;
         margin: 21px 0 31px 0;
@@ -402,13 +401,14 @@ body {
         margin-bottom: 25px;
     }
     .header ul {
-        border-bottom: solid 3px #F2F2F2;
         padding: 0;
         gap: 0;
     }
     .header li {
         flex: 1;
         width: 187px;
+        border-top: none;
+        border-bottom: solid 3px #F2F2F2;
     }
     .header li:hover {
         border-top: none;
