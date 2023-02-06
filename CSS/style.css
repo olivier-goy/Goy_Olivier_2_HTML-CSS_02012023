@@ -89,12 +89,10 @@
     width: 100%;
 }
 
-/* class body and container */
-body {
-    max-width: 1400px;
-}
+/* class container */
 .container {
-    max-width: 1340px;
+    max-width: 1400px;
+    padding: 0 27px;
 }
 
 /* div in header */
@@ -168,6 +166,9 @@ body {
     align-items: center;
     margin: 31px 0 38px 0;
 }
+.filtersContainers {
+    flex-wrap: wrap;
+}
 .buttonFilter {
     background-color: #FFFFFF;
     border: solid 2px #D9D9D9;
@@ -211,7 +212,7 @@ body {
     flex: 2.4;
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 42px 35px 35px 35px;
 }
 .lodgingIn h2 {
     margin: 0 0 23px 0;
@@ -249,7 +250,7 @@ body {
     flex: 1;
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 38px;
+    padding: 42px 34px 34px 34px;
 }
 .lodgingPopularForTitle {
     margin-bottom: 26px;
@@ -331,10 +332,11 @@ body {
     }
     .buttonFilters{
         width: 100%;
+        gap: 10px;
     }
     .responsiveFilters {
         width: 100%;
-        justify-content: space-around;
+        gap: 10px;
     }
     .buttonFilter {
         margin-left: 0;
@@ -380,7 +382,7 @@ body {
         height: 211px;
     }
     .activityText {
-        padding-right: 36px;
+        padding-right: 20px;
     }
     .activityTopMargin {
         margin-top: 5px;
@@ -392,6 +394,9 @@ body {
 
 /* media queries for mobile */
 @media (max-width: 767px) {
+    .container {
+        padding: 0;
+    }
     .header {
         flex-direction: column;
         margin: 21px 0 31px 0;
@@ -421,9 +426,8 @@ body {
         width: 100%;
         margin-top: 36px;
     }
-    .buttonSearchLodging>button {
-        text-indent: -9999px;
-        line-height: 0;
+    .buttonSearchLodging>button span {
+        display: none;
     }
     .buttonSearchLodging>button::after {
         font-family: "Font Awesome 6 Free";
@@ -488,6 +492,7 @@ body {
     }
     .activities {
         flex-direction: column;
+        gap: 24px;
     }
     .cardActivity img {
         height: 134px;

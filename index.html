@@ -13,7 +13,7 @@
     <title>Booki</title>
 </head>
 
-<body class="paddingInit marginAuto">
+<body class="marginInit">
     <div class="container marginAuto">
 
         <header class="header displayFlex">
@@ -40,15 +40,17 @@
                             <i class="fa-solid fa-lg fa-location-dot"></i>
                         </div>
                         <div class="inputSearchLodging h100">
-                            <input class="fontRalewayBold paddingInit h100 w100" type="text" name="lodging" value="Marseille, France" required>
+                            <input class="fontRalewayBold paddingInit h100 w100" type="text" name="lodging" placeholder="selectionner votre ville" value="Marseille, France" required>
                         </div>
                         <div class="buttonSearchLodging h100">
-                            <button class="fontRalewayBold h100 w100 font5" type="submit">Rechercher</button>
+                            <button class="fontRalewayBold h100 w100 font5" type="submit">
+                                <span>Rechercher</span>
+                            </button>
                         </div>
                     </div>   
                     <div class="buttonFilters displayFlex">
                         <h2 class="fontRalewayBold marginInit font5">Filtres</h2>
-                        <div class="displayFlex responsiveFilters">
+                        <div class="displayFlex filtersContainers responsiveFilters">
                             <button class="fontRalewayBold buttonFilter font4" type="button">
                                 <i class="fa-sharp fa-lg fa-solid fa-money-bill-wave colorBlue"></i>
                                 Économique
