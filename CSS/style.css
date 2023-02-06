@@ -432,9 +432,6 @@
     .buttonSearchLodging>button::after {
         font-family: "Font Awesome 6 Free";
         content: "\f002";
-        text-indent: 0;
-        display: block;
-        line-height: initial;
     }
     .buttonFilters {
         margin: 34px 0 24px 0;
